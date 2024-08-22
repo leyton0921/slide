@@ -1,0 +1,78 @@
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  
+  
+  .card {
+    text-align: center;
+    padding: 1rem;
+
+  }
+  
+  .imageWrapper {
+    background-color: #f3f3f3;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+    }
+  }
+  
+  .productName {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .price {
+    margin-top: 0.5rem;
+    color: #555;
+    font-size: 1rem;
+  }
+  
+  .slick-prev,.slick-next {
+  display: none; 
+
+    }
+
+    .customNextArrow,
+    .customPrevArrow {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 1;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-150%);
+    display: block
+    }
+
+    .customNextArrow::before,
+    .customPrevArrow::before {
+    content: '';
+    display: block;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    padding: 4px;
+    border-color: black;
+    }
+
+    .customNextArrow::before {
+    transform: rotate(-45deg);
+    }
+
+    .customPrevArrow::before {
+    transform: rotate(135deg);
+    }
+
+}
